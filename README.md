@@ -16,7 +16,7 @@ Unlike conventional discretization or neural-only tokenizers, HSQP integrates:
 - **Quantization** for numerical compactness  
 - **Hierarchical tokenization** for scalable long-horizon forecasting  
 
-HSQP can be seamlessly attached to existing forecasting architectures (e.g., PatchTST, TimeLLM) and LLM-based pipelines without retraining the backbone model.
+HSQP can be seamlessly attached to existing forecasting architectures (PatchTST, TimeLLM, TimeCMA) and LLM-based pipelines without retraining the backbone model.
 
 ---
 
@@ -29,6 +29,11 @@ HSQP can be seamlessly attached to existing forecasting architectures (e.g., Pat
 - Minimal overhead and modular design  
 
 ---
+
+## Installations
+🔹 git clone https://github.com/shamsua/Time-series-Tokenization-For-LLMs.git  
+🔹 cd Time-series-Tokenization-For-LLMs  
+🔹 pip install -r requirements.txt  
 
 ## 🧱 Repository Structure
 
@@ -67,10 +72,7 @@ Time-series-Tokenization-For-LLMs/
 └── README.md
 
 
-## Installations
-🔹 git clone https://github.com/shamsua/Time-series-Tokenization-For-LLMs.git  
-🔹 cd Time-series-Tokenization-For-LLMs  
-🔹 pip install -r requirements.txt  
+
 
 
 
