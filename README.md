@@ -11,7 +11,7 @@
 The figure below illustrates the **HSQP (Hierarchical Symbolic–Quantized Pipeline)** workflow, showing how raw time-series data is converted into token sequences suitable for Large Language Models (LLMs).
 
 <p align="center">
-  <img src="./HSQP_Vizualization.png" alt="HSQP Pipeline" width="500">
+  <img src="./HSQP_Vizualization.png" alt="HSQP Pipeline" width="350">
 </p>
 
 <p align="center">
