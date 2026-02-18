@@ -15,7 +15,7 @@ The figure below illustrates the **HSQP (Hierarchical Symbolic–Quantized Pipel
 </p>
 
 <p align="center">
-<em>Figure 1: Overview of the HSQP tokenization pipeline, including symbolic aggregation, quantization, and hierarchical tokenization stages.</em>
+<em>Figure 1: Overview of the HSQP tokenization pipeline.</em>
 </p>
 ---
 
