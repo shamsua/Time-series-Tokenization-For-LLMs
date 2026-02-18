@@ -65,3 +65,9 @@ Time-series-Tokenization-For-LLMs/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+
+
+# Installations
+git clone https://github.com/shamsua/Time-series-Tokenization-For-LLMs.git
+cd Time-series-Tokenization-For-LLMs
+pip install -r requirements.txt
