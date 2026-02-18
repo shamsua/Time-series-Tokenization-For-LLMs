@@ -3,7 +3,7 @@
 <p align="center">
   <b>Time-Series Tokenization · Symbolic Representation · Quantization · LLMs</b>
 </p>
-
+![HSQP Pipeline](figures/HSQP_Vizualization.png)
 ---
 
 ## 🔍 Overview
