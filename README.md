@@ -3,9 +3,16 @@
 <p align="center">
   <b>Time-Series Tokenization · Symbolic Representation · Quantization · LLMs</b>
 </p>
-![HSQP Pipeline](figures/HSQP_Vizualization.png)
 
-*Figure 1: Overview of the HSQP tokenization pipeline.*
+---
+
+## HSQP Tokenization Pipeline
+
+The figure below illustrates the **HSQP (Hierarchical Symbolic–Quantized Pipeline)** workflow for converting continuous time-series into token sequences for Large Language Models (LLMs). It shows the key stages: symbolic aggregation, quantization, and hierarchical tokenization.
+
+<img src="figures/HSQP_Vizualization.png" alt="HSQP Pipeline" width="700"/>
+
+<p align="center"><em>Figure 1: Overview of the HSQP tokenization pipeline, showing data flow from raw time-series to tokenized sequences ready for LLM integration.</em></p>
 
 ---
 
