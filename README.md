@@ -35,45 +35,6 @@ HSQP can be seamlessly attached to existing forecasting architectures (PatchTST,
 🔹 cd Time-series-Tokenization-For-LLMs  
 🔹 pip install -r requirements.txt  
 
-## 🧱 Repository Structure
-
-```text
-Time-series-Tokenization-For-LLMs/
-│
-├── data/                    # Datasets (not tracked)
-│   ├── raw/
-│   └── processed/
-│
-├── src/                     # Core reusable modules
-│   ├── tokenization/        # HSQP, ABBA, quantization
-│   ├── datasets/            # Dataset loaders
-│   ├── models/              # Model wrappers
-│   ├── training/            # Training logic
-│   ├── evaluation/          # Metrics & evaluation
-│   └── utils/               # Utilities
-│
-├── experiments/
-│   ├── configs/             # YAML experiment configs
-│   └── results/             # Output logs (not tracked)
-│
-├── demos/                   # Reproducible notebooks
-│   ├── LLM_ABBA_demo.ipynb
-│   ├── PatchTST_HSQP_demo.ipynb
-│   ├── TimeLLM_HSQP_demo.ipynb
-│   └── TimeVQVAE_demo.ipynb
-│
-├── scripts/                 # Entry-point scripts
-│   ├── preprocess.py
-│   ├── train.py
-│   └── evaluate.py
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-
-
-
-
-
-
+## Acknowledgement
+This work builds upon prior advances in symbolic time-series representation, quantization, and transformer-based forecasting.
 
