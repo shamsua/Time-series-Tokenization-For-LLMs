@@ -22,11 +22,11 @@ HSQP can be seamlessly attached to existing forecasting architectures (e.g., Pat
 
 ## ✨ Key Contributions
 
-- 🔹 A unified **symbolic–quantized tokenization pipeline** for time-series  
-- 🔹 Plug-and-play compatibility with **LLMs and transformer forecasters**  
-- 🔹 Strong performance across **forecasting, compression, and reconstruction**  
-- 🔹 Interpretable and low-entropy token sequences  
-- 🔹 Minimal overhead and modular design  
+- A unified **symbolic–quantized tokenization pipeline** for time-series  
+- Plug-and-play compatibility with **LLMs and transformer forecasters**  
+- Strong performance across **forecasting, compression, and reconstruction**  
+- Interpretable and low-entropy token sequences  
+- Minimal overhead and modular design  
 
 ---
 
@@ -67,7 +67,11 @@ Time-series-Tokenization-For-LLMs/
 └── README.md
 
 
-# Installations
-git clone https://github.com/shamsua/Time-series-Tokenization-For-LLMs.git
-cd Time-series-Tokenization-For-LLMs
-pip install -r requirements.txt
+## Installations
+🔹 git clone https://github.com/shamsua/Time-series-Tokenization-For-LLMs.git  
+🔹 cd Time-series-Tokenization-For-LLMs  
+🔹 pip install -r requirements.txt  
+
+
+
+
