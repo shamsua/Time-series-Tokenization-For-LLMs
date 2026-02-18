@@ -1,2 +1,67 @@
 # HSQP: A Plug-and-Play Symbolic–Quantized Framework for Time-Series Tokenization in Large Language Models
-Tokenizingcontinuous time-series signals for Large Language Models (LLMs) remains a fun damental challenge due to the mismatch between numerical temporal data and discrete token-based architectures. Existing approaches address this problem in isolation, often sacrificing numerical fidelity, temporal coherence, or computational efficiency. We propose Hierarchical Symbolic–Quantized Patching (HSQP), a unified tokenization framework that hierarchically integrates patch segmentation, adaptive Brownian Bridge–based symbolic aggregation (ABBA), and affine quantization into a jointly embedded, non-separable token representation. Unlike sequential preprocessing pipelines, HSQP fuses symbolic cluster identities and quantized numerical descriptors into compact dual semantic tokens that simultaneously encode structural temporal patterns and bounded numerical precision. The hierarchical design reduces sequence length, constrains reconstruction drift through patch-level anchoring, and introduces bounded quantization noise that stabilizes downstream Transformer attention. We provide theoretical analysis of quantization error propagation and demonstrate that reconstruction error remains locally bounded under Lipschitz continuity assumptions. Extensive experiments on six benchmark datasets show that HSQPconsistently improves reconstruction fidelity and downstream forecasting accuracy while achieving stable compression ratios and balanced token entropy. Integrated as a plug-and-play module with frozen LLM backbones, HSQP enhances predictive performance without architectural modification. These results establish HSQP as an efficient, interpretable, and scalable tokenization paradigm for adapting continuous time-series data to LLM-based forecasting frameworks.
+
+<p align="center">
+  <b>Time-Series Tokenization · Symbolic Representation · Quantization · LLMs</b>
+</p>
+
+---
+
+## 🔍 Overview
+
+**HSQP** is a **plug-and-play symbolic–quantized framework** designed to convert continuous time-series into **compact, semantically meaningful token sequences** suitable for **Large Language Models (LLMs)**.
+
+Unlike conventional discretization or neural-only tokenizers, HSQP integrates:
+
+- **Symbolic aggregation** for temporal structure preservation  
+- **Quantization** for numerical compactness  
+- **Hierarchical tokenization** for scalable long-horizon forecasting  
+
+HSQP can be seamlessly attached to existing forecasting architectures (e.g., PatchTST, TimeLLM) and LLM-based pipelines without retraining the backbone model.
+
+---
+
+## ✨ Key Contributions
+
+- 🔹 A unified **symbolic–quantized tokenization pipeline** for time-series  
+- 🔹 Plug-and-play compatibility with **LLMs and transformer forecasters**  
+- 🔹 Strong performance across **forecasting, compression, and reconstruction**  
+- 🔹 Interpretable and low-entropy token sequences  
+- 🔹 Minimal overhead and modular design  
+
+---
+
+## 🧱 Repository Structure
+
+```text
+Time-series-Tokenization-For-LLMs/
+│
+├── data/                    # Datasets (not tracked)
+│   ├── raw/
+│   └── processed/
+│
+├── src/                     # Core reusable modules
+│   ├── tokenization/        # HSQP, ABBA, quantization
+│   ├── datasets/            # Dataset loaders
+│   ├── models/              # Model wrappers
+│   ├── training/            # Training logic
+│   ├── evaluation/          # Metrics & evaluation
+│   └── utils/               # Utilities
+│
+├── experiments/
+│   ├── configs/             # YAML experiment configs
+│   └── results/             # Output logs (not tracked)
+│
+├── demos/                   # Reproducible notebooks
+│   ├── LLM_ABBA_demo.ipynb
+│   ├── PatchTST_HSQP_demo.ipynb
+│   ├── TimeLLM_HSQP_demo.ipynb
+│   └── TimeVQVAE_demo.ipynb
+│
+├── scripts/                 # Entry-point scripts
+│   ├── preprocess.py
+│   ├── train.py
+│   └── evaluate.py
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
