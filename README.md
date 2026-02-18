@@ -4,6 +4,9 @@
   <b>Time-Series Tokenization · Symbolic Representation · Quantization · LLMs</b>
 </p>
 ![HSQP Pipeline](figures/HSQP_Vizualization.png)
+
+*Figure 1: Overview of the HSQP tokenization pipeline.*
+
 ---
 
 ## 🔍 Overview
